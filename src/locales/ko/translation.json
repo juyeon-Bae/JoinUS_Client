@@ -1,0 +1,18 @@
+{
+    "authentication": {
+        "emailPlaceholder": "이메일 작성하기",
+        "passwordPlaceholder": "비밀번호 작성하기",
+        "passwordRecovery": "비밀번호 찾기",
+        "signIn": "로그인",
+        "authenticationOptions": "로그인 및 회원가입 하기",
+        "googleSignIn": "구글 계정으로 로그인"
+    },
+    "notFound": {
+        "title": "페이지를 찾을 수 없습니다",
+        "description": {
+            "primary": "고객님께서 요청하신 페이지가 존재하지 않습니다",
+            "secondary": "URL을 다시 한 번 확인해주시기 바랍니다"
+        },
+        "backToHome": "홈으로 돌아가기"
+    }
+}

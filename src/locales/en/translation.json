@@ -1,0 +1,18 @@
+{
+    "authentication": {
+        "emailPlaceholder": "Enter your email",
+        "passwordPlaceholder": "Enter your password",
+        "passwordRecovery": "Find your password",
+        "signIn": "Sign In",
+        "authenticationOptions": "Sign In and Sign Up",
+        "googleSignIn": "Sign in with Google"
+    },
+    "notFound": {
+        "title": "Page Not Found",
+        "description": {
+            "primary": "The page you requested does not exist",
+            "secondary": "Please check the URL again"
+        },
+        "backToHome": "Back to Home"
+    }
+}
