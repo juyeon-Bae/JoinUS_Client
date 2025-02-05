@@ -51,7 +51,7 @@ const TitleContainer = styled.div`
 `;
 
 function Unauthorized() {
-  const { t } = useTranslation();
+  const { t }: { t: (key: string) => string } = useTranslation();
   const { language } = useLanguageStore();
   
   useEffect(() => {

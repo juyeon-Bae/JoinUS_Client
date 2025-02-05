@@ -49,7 +49,9 @@ function HomePage() {
   };
 
   return (
+     
     <Container>
+      <div>test</div>
       <Title>동아리</Title>
       <button onClick={handleLogout}>Logout</button>
       {user && <p>User: {user.email}</p>}

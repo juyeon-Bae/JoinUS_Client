@@ -6,7 +6,7 @@ import i18n from "../locales/i18n";
 import { useLanguageStore } from "../utils/store/languageStore";
 import { 
   browserLocalPersistence,
-  browserSessionPersistence,
+  // browserSessionPersistence,
   setPersistence,
   signInWithEmailAndPassword, 
   signInWithPopup
@@ -239,7 +239,7 @@ const CloseButton = styled.button`
 `;
 
 const LoginPage = () => {
-  const { t } = useTranslation();
+  const { t }: { t: (key: string) => string } = useTranslation();
   const { language, setLanguage } = useLanguageStore();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -270,7 +270,7 @@ const LoginPage = () => {
     setPersistence(auth, browserLocalPersistence).then(() => {
       signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        const user = userCredential.user;
+        // const user = userCredential.user;
 
         // 백엔드 요청
 
@@ -286,7 +286,7 @@ const LoginPage = () => {
     setPersistence(auth, browserLocalPersistence).then(() => {
       signInWithPopup(auth, googleProvider)
       .then((result) => {
-        const user = result.user;
+        // const user = result.user;
         
         navigate('/');
       })
